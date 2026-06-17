@@ -1,0 +1,25 @@
+Data sample count: 1200
+Feature columns: posts_per_week, likes_per_week, comments_per_week, shares_per_week, followers, following, avg_session_minutes, active_days_per_week, night_activity_ratio, video_watch_minutes, purchase_clicks_per_week
+KMeans K used: 4
+KMeans silhouette score: 0.1451
+K selection comparison:
+  K=2: silhouette_score=0.2269
+  K=3: silhouette_score=0.1428
+  K=4: silhouette_score=0.1451
+  K=5: silhouette_score=0.1164
+  K=6: silhouette_score=0.1138
+  K=7: silhouette_score=0.1108
+  K=8: silhouette_score=0.1060
+K=2 has the highest silhouette score, but K=4 is selected for finer-grained user profiling and business interpretability.
+PCA explained variance ratio: [0.4062322249801265, 0.15061778522771171]
+DBSCAN eps: 1.75
+DBSCAN min_samples: 20
+DBSCAN cluster count excluding noise: 3
+DBSCAN noise count: 986
+DBSCAN noise ratio: 82.17%
+DBSCAN result note: DBSCAN selected eps=1.75, min_samples=20; found 3 clusters with noise ratio 82.17%.
+DBSCAN cluster distribution:
+  cluster -1: 986
+  cluster 0: 158
+  cluster 1: 19
+  cluster 2: 37
